@@ -1,7 +1,7 @@
 # T1 PHILIPPINES SHOP
 
 ## About
-T1 PHILIPPINES SHOP is an e-commerce platform similar to Shopee or Lazada, but exclusively focused on T1 merchandise such as jerseys, caps, and other related items. This project was developed as a final activity for Web Development 2, achieving a perfect score.
+T1 PHILIPPINES SHOP is an e-commerce platform similar to Shopee or Lazada but exclusively focused on T1 merchandise such as jerseys, caps, and other related items. This project was developed as a final activity for Web Development II in December 2023, achieving a perfect score.
 
 ## Key Features
 - **hCaptcha Integration**: Implemented for enhanced security
