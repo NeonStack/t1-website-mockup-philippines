@@ -50,7 +50,7 @@ T1 PHILIPPINES SHOP is an e-commerce platform similar to Shopee or Lazada, but e
 This project was created solely for educational purposes as part of a Web Development course. All product images, logos, and the T1 brand are property of their respective owners. The website design and code are original creations.
 
 ## License
-[LICENSE]
+[MIT LICENSE](LICENSE)
 
 ---
 
