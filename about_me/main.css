@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700;800;900&family=Prata&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(38, 34, 34);
+    width: 100%;
+    font-size: 90px;
+    
+}
+
+body::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgb(38, 34, 34);
+    background: linear-gradient(to bottom right, rgb(56, 56, 56), rgb(38, 34, 34));
+    background-repeat: none;
+    background-size: cover;
+    position: fixed;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    height: 50px;
+    width: 100%;
+    font-family: 'cinzel';
+    font-weight: 500;
+    user-select: none;
+    overflow: hidden;
+}
+
+nav::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    transition: 0.7s ease;
+    z-index: -2;
+}
+
+nav:hover::after {
+    left: 100%;
+}
+
+nav img {
+    height: 95%;
+}
+
+.navbuttons-mobile{
+    display: none;
+}
+
+.navbuttons {
+    display: flex;
+    gap: 35px;
+    font-size: 15px;
+}
+
+ul {
+    align-items: center;
+    display: flex;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+}
+
+nav ul a:hover {
+    color: gray;
+    transform: scale(1.1);
+}
+
+.hamburger-container {
+    display: none;
+}
+
+#hamburger {
+    display: none;
+    color: lightpink;
+    height: 20px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.bgbigcont {
+    display: flex;
+    margin-top: -50px;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(to right, #262222, brown, black, #301934, #36454F, #79305a); */
+    background: transparent;
+}
+
+@keyframes slidecolors {
+    0%{
+        background-position: left;
+    }
+
+    100%{
+        background-position: right;
+    }
+}
+
+.bigcont {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.smallcont1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    flex-direction: column;
+    margin: auto;
+}
+
+.txtbox {
+    position: relative;
+    font-size: 60px;
+}
+
+.txtbox h2 {
+    margin-top: 35px;
+    background-image: linear-gradient(to right bottom, #ffdce2, #ff6a90);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1.2em;
+    -webkit-filter: drop-shadow(2px 2px 3px black);
+    filter: drop-shadow(2px 2px 3px black);
+    padding: 0px 50px;
+    font-family: "lato";
+    cursor: default;
+    user-select: none;
+    transition: transform 0.5s ease;
+}
+
+.subscont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px 0px;
+}
+
+.subs1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subs1 h1 {
+    background: linear-gradient(to right, pink, rgb(255, 168, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    overflow: hidden;
+    font-size: 2rem;
+    border-right: .1em solid white;
+    white-space: nowrap;
+    animation:
+        typing 15s infinite ease-in-out,
+        blink-caret 1s infinite;
+}
+
+@keyframes typing {
+
+    0%,
+    10%,
+    100% {
+        width: 0%;
+    }
+
+    50%,
+    95% {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+.subs2 {
+    font-size: 20px;
+    color: rgb(226, 226, 226);
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.buttonsCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    width: 50%;
+    height: 50px;
+}
+
+.link1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    background: lightpink;
+    background-clip: content-box;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    overflow: hidden;
+    z-index: 1;
+    border: solid lightpink;
+    background: transparent;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.link1::before {
+    position: absolute;
+    content: "";
+    background: lightpink;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.link1:hover::before {
+    transform: scaleX(1);
+}
+
+.link1:hover {
+    color: black;
+}
+
+.link2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    background: transparent;
+    background-clip: content-box;
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    overflow: hidden;
+    z-index: 1;
+    border: solid lightpink;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.link2::before {
+    position: absolute;
+    content: "";
+    background: lightpink;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 50px;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out, color 2s ease;
+    cursor: pointer;
+}
+
+.link2:hover::before {
+    transform: scaleX(0);
+}
+
+.link2:hover {
+    color: white;
+}
+
+.socialmedia {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.soclink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: transform 0.4s ease;
+}
+
+.soclink:hover {
+    transform: scale(1.15);
+}
+
+#fbicon,
+#instagramicon,
+#twittericon,
+#emailicon,
+#discordicon {
+    font-size: 40px;
+    color: lightpink;
+    transition: color 0.5s ease;
+}
+
+
+.soclink:hover #fbicon,
+.soclink:hover #instagramicon,
+.soclink:hover #twittericon,
+.soclink:hover #emailicon,
+.soclink:hover #discordicon {
+    color: lightcoral;
+}
+
+.homecont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgb(38, 34, 34);
+    padding: 50px 0;
+}
+
+.homecont-title {
+    font-family: 'Bruno Ace SC';
+    color: lightpink;
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px black;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.linedesign {
+    width: 100%;
+    border: none;
+    background: white;
+    height: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+
+.homecontsub1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.homecontsub2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.homecontsub1-1,
+.homecontsub1-2,
+.homecontsub1-3,
+.homecontsub2-1,
+.homecontsub2-2,
+.homecontsub2-3 {
+    font-size: 1rem;
+    border-radius: 30px;
+    height: 90%;
+    width: 30%;
+    transition: 0.5s ease-in-out;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.homecontsub1-1 {
+    position: relative;
+    background-image: url(Images/Absolute_Reality_v16_realistic_woman_wearing_ecofriendly_jewel_0.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.homecontsub1-2 {
+    position: relative;
+    background-image: url(Images/DreamShaper_v7_realistic_beautiful_woman_wearing_jewelry_green_0.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.homecontsub1-3 {
+    position: relative;
+    background-image: url(Images/DreamShaper_v7_realistic_beautiful_woman_wearing_jewelry_yello_0.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.homecontsub2-1 {
+    position: relative;
+    background-image: url(Images/DreamShaper_v7_realistic_beautiful_woman_wearing_jewelry_yello_0\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.homecontsub2-2 {
+    position: relative;
+    background-image: url(Images/DreamShaper_v7_realistic_woman_wearing_jewelry_black_jewelry_4_0.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.homecontsub2-3 {
+    position: relative;
+    background-image: url(Images/DreamShaper_v7_woman_rich_blue_jewelry_4k_american_good_lookin_0.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.homecontsub1-1 .homecontsub1-1txt,
+.homecontsub1-2 .homecontsub1-2txt,
+.homecontsub1-3 .homecontsub1-3txt,
+.homecontsub2-1 .homecontsub2-1txt,
+.homecontsub2-2 .homecontsub2-2txt,
+.homecontsub2-3 .homecontsub2-3txt {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    gap: 20px;
+    text-decoration: none;
+    background: rgba(114, 54, 95, 0.5);
+    overflow: hidden;
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+}
+
+.homecontsub1-1:hover .homecontsub1-1txt,
+.homecontsub1-2:hover .homecontsub1-2txt,
+.homecontsub1-3:hover .homecontsub1-3txt,
+.homecontsub2-1:hover .homecontsub2-1txt,
+.homecontsub2-2:hover .homecontsub2-2txt,
+.homecontsub2-3:hover .homecontsub2-3txt {
+    bottom: 0;
+}
+
+.homecontsub1-1:hover,
+.homecontsub1-2:hover,
+.homecontsub1-3:hover,
+.homecontsub2-1:hover,
+.homecontsub2-2:hover,
+.homecontsub2-3:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    margin-top: 100px;
+    height: 40vh;
+    background: lightpink;
+    width: 100%;
+}

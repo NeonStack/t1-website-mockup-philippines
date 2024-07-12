@@ -1,0 +1,436 @@
+/*footer----------------------------------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    background: darkred;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.125em;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer-column-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer-title {
+    position: relative;
+    font-size: 1.2em;
+    width: fit-content;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.footer-title::before {
+    content: "";
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+footer ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.5s ease;
+}
+
+footer ul li a:hover::before{
+    width: 100%;
+}
+
+#sponsor-logo {
+    opacity: 0;
+    width: 15px;
+    margin-left: 12px;
+    filter: drop-shadow(0 0 10px white);
+    transition: opacity 0.5s ease;
+}
+
+footer ul li a:hover #sponsor-logo {
+    opacity: 1;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#copyright a {
+    color: white;
+}/*footer----------------------------------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    background: darkred;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.125em;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer-column-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer-title {
+    position: relative;
+    font-size: 1.2em;
+    width: fit-content;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.footer-title::before {
+    content: "";
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+footer ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.5s ease;
+}
+
+footer ul li a:hover::before{
+    width: 100%;
+}
+
+#sponsor-logo {
+    opacity: 0;
+    width: 15px;
+    margin-left: 12px;
+    filter: drop-shadow(0 0 10px white);
+    transition: opacity 0.5s ease;
+}
+
+footer ul li a:hover #sponsor-logo {
+    opacity: 1;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#copyright a {
+    color: white;
+}/*footer----------------------------------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    background: darkred;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.125em;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer-column-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer-title {
+    position: relative;
+    font-size: 1.2em;
+    width: fit-content;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.footer-title::before {
+    content: "";
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+footer ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.5s ease;
+}
+
+footer ul li a:hover::before{
+    width: 100%;
+}
+
+#sponsor-logo {
+    opacity: 0;
+    width: 15px;
+    margin-left: 12px;
+    filter: drop-shadow(0 0 10px white);
+    transition: opacity 0.5s ease;
+}
+
+footer ul li a:hover #sponsor-logo {
+    opacity: 1;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#copyright a {
+    color: white;
+}/*footer----------------------------------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    background: darkred;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.125em;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer-column-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer-title {
+    position: relative;
+    font-size: 1.2em;
+    width: fit-content;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.footer-title::before {
+    content: "";
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+footer ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.5s ease;
+}
+
+footer ul li a:hover::before{
+    width: 100%;
+}
+
+#sponsor-logo {
+    opacity: 0;
+    width: 15px;
+    margin-left: 12px;
+    filter: drop-shadow(0 0 10px white);
+    transition: opacity 0.5s ease;
+}
+
+footer ul li a:hover #sponsor-logo {
+    opacity: 1;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#copyright a {
+    color: white;
+}/*footer----------------------------------------------- */
+footer {
+    display: flex;
+    flex-direction: column;
+    background: darkred;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.125em;
+    color: white;
+    margin-top: 30px;
+}
+
+.footer-column-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer-title {
+    position: relative;
+    font-size: 1.2em;
+    width: fit-content;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.footer-title::before {
+    content: "";
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+footer ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: white;
+    transition: width 0.5s ease;
+}
+
+footer ul li a:hover::before{
+    width: 100%;
+}
+
+#sponsor-logo {
+    opacity: 0;
+    width: 15px;
+    margin-left: 12px;
+    filter: drop-shadow(0 0 10px white);
+    transition: opacity 0.5s ease;
+}
+
+footer ul li a:hover #sponsor-logo {
+    opacity: 1;
+}
+
+#copyright {
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#copyright a {
+    color: white;
+}

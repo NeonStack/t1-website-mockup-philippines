@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-user-drag: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: white;
+    font-family: 'oswald';
+    scroll-behavior: smooth;
+    margin-top: 50px;
+}
+
+.prod-cont {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    border-bottom: solid #e2012d 50px;
+    min-height: 95vh;
+    background: url(../img/t1-bg-prod.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: bgAnim 8s ease forwards;
+}
+
+.prod-cont-col1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.prod-img {
+    object-fit: contain;
+    height: 90%;
+    width: 90%;
+}
+
+.prod-cont-col2 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px 50px;
+}
+
+.review-count-text {
+    font-size: 0.8em;
+}
+
+.prod-category {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.prod-category::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: black;
+}
+
+.prod-description {
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+.quantity-input {
+    height: 30px;
+    padding: 5px 0px;
+    padding-left: 10px;
+    width: 4em;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.prod-price {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+
+}
+
+#label-quantity {
+    font-size: 1.3em;
+}
+
+#add-to-cart-btn {
+    margin-top: 20px;
+    background: black;
+    border: none;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    width: fit-content;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px;
+    transition: transform 0.2s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease,
+        border-radius 0.3s ease;
+}
+
+#add-to-cart-btn:hover {
+    transform: scale(1.1);
+    background: #e2012d;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    cursor: pointer;
+}
+
+#ratings-reviews-title {
+    background: #e2012d;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    margin-bottom: 40px;
+    width: fit-content;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.reviews-ratings-cont {
+    width: 70%;
+    margin: auto;
+    font-size: 1.3em;
+    min-height: 40vh;
+}
+
+.reviews-text-cont {
+    opacity: 0;
+    transform: translateY(100px);
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 30px 30px;
+    transition: opacity 1s, transform 2s ease;
+    height: fit-content;
+}
+
+.reviews-text-cont.show {
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+
+.reviews-text-cont #user-profile-picture{
+    width: 1.15em;
+    height: 1.15em;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+    margin-right: 4px;
+}
+
+.reviews-text-cont .name-date-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+#rate-date-created {
+    color: grey;
+    font-size: 0.7em;
+    margin-top: 5px;
+}
+
+/* FOR STARS ONLY */
+.star-rating {
+    color: #ffc700;
+    font-size: 1.2em;
+}
+
+.star-rating-grey {
+    color: grey;
+}
+
+.no-reviews-text {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+/* ANIMATION */
+@keyframes bgAnim {
+    from {
+        background-position: 200%;
+    }
+
+    to {
+        background-position: 80%;
+    }
+}

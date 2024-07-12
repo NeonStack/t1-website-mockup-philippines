@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-user-drag: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: white;
+    font-family: 'oswald';
+    scroll-behavior: smooth;
+    margin-top: 50px;
+}
+
+.main-container{
+    width: 80%;
+    margin: 100px auto;
+    padding: 50px 50px;
+    font-size: 1.1em;
+    border-radius: 20px;
+    border: solid black 2px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.main-title{
+    color: white;
+    border-radius: 10px;
+    width: fit-content;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.811);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    text-align: center;
+}
+
+.main-container h4{
+    font-weight: normal;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.main-container hr{
+    margin: 20px 0;
+}
+
+.main-container h2{
+    margin-top: 30px;
+    background: rgb(174, 0, 0);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    margin-bottom: 10px;
+}
+
+.main-container p {
+    margin-left: 40px;
+    text-align: justify;
+}
+
+.main-container h3{
+    margin-left: 20px;
+    margin-top: 10px;
+}
