@@ -1,7 +1,6 @@
 # T1 PHILIPPINES SHOP
 
-![image](https://github.com/user-attachments/assets/faa294b2-e643-44c2-94c5-7e94a8b1bb1f)
-
+![image](https://github.com/user-attachments/assets/9da4a684-e346-41cd-be5a-e6724f798c36)
 
 ## About
 T1 PHILIPPINES SHOP is an e-commerce platform similar to Shopee or Lazada but exclusively focused on T1 merchandise such as jerseys, caps, and other related items. This project was developed as a final activity for Web Development II in December 2023.
